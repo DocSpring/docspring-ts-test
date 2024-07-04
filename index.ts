@@ -7,9 +7,9 @@ dotenv.config();
 
 // Type for the DocSpring configuration
 const config: DocSpring.Configuration = new DocSpring.Configuration({
-  basePath: process.env.DOCSPRING_BASE_PATH || '',
-  username: process.env.DOCSPRING_USERNAME || '',
-  password: process.env.DOCSPRING_PASSWORD || '',
+  basePath: process.env.DOCSPRING_BASE_PATH,
+  username: process.env.DOCSPRING_USERNAME,
+  password: process.env.DOCSPRING_PASSWORD,
 });
 
 const api: DocSpring.PDFApi = new DocSpring.PDFApi(config);
